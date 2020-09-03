@@ -14,7 +14,7 @@ connectDB();
 
 app.use(cors());
 app.use(express.json());
-app.use('/candy', candy);
+app.use('/', candy);
 app.use(errorHandler);
 
 app.listen(PORT, () =>
